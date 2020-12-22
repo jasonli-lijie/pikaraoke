@@ -338,6 +338,10 @@ class Karaoke:
                         "Connect at: " + self.url, True, (255, 255, 255)
                     )
                     self.screen.blit(text, (p_image.get_width() + 35, 20))
+                    text = self.font.render(
+                        "Scan QR code with camera or enter URL in browser", True, (255, 255, 255)
+                    )
+                    self.screen.blit(text, (p_image.get_width() + 35, 60))
 
             if (
                 self.raspi_wifi_config_installed
